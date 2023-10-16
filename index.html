@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password validator</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div class="container">
+        <h1>Pratik Gondkar</h1> <br> 
+        <h3>Basic Sign Up From</h3> <br>
+
+        <form onsubmit="return validateform()">
+            <!--  first name -->
+        <label for="">First Name :-</label>
+        <input type="text" id="fname" value="" placeholder="enter first name...">
+        <span id="blankMsg"></span> <br> <br>
+
+        <!--  last name -->
+        <label >Last Name :-</label>
+        <input type="text" id="lname" value="" placeholder="enter Last name...">
+        <span id="charMsg"></span> <br> <br>
+
+        <!-- create password -->
+        <label>Create password :-</label>
+        <input type="password" id="pswd1" value="" placeholder="enter password...">
+        <span id="massage1"></span> <br> <br>
+
+        <!-- confirm password -->
+        <label >Confirm password :-</label>
+        <input type="password" id="pswd2" value="">
+        <span id="massage2"></span> <br> <br>
+
+       <div class="button">
+         <!-- click varify -->
+         <input type="submit" value="Submit">
+
+         <!-- reset click -->
+         <button type="reset" value="reset">Reset</button>
+       </div>
+        </div>
+</form>
+<!-- script link -->
+<script src="./script.js"></script>
+</body>
+
+</html>
